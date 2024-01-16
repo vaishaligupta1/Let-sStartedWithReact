@@ -1,20 +1,24 @@
 import ExpenseDate from './ExpenseDate';
-import './ExpenseItems.css' ;
-import ExpenseDetails from './ExpenseDetails';
+import './ExpenseItem.css' ;
 import Card from '../UI/Card';
-import '../UI/Card.css'
 const ExpenseItem=(props)=>
-{
-    // const expenseDate = new Date(2023,1,9);
-    // const expenseTitle = "Car Insurance";
-    // const expenseAmount = 294.47;
-    //const LocationOfExpenditure = "Mumbai";
-    
-    return (
-    
+{   
+    const clickHandler = ()=>{
+        console.log("Clicked!!!")
+    }
+    const deleteHandler =()=>{
+        console.log("delete ho gaya")
+    }
+    return (   
     <Card className ="expense-item">
         <ExpenseDate date ={props.date}/>
-        <ExpenseDetails title ={props.title} location={props.location} amount ={props.amount}></ExpenseDetails>
+        <div className="expense-item__description">
+        <h2>{props.title}</h2>
+        <h3>{props.location}</h3>
+        <div className="expense-item__price">${props.amount}</div>
+        </div>
+        <button onClick={clickHandler}>Change Title</button>
+        <button onClick={deleteHandler}>Delete Expense</button>
     </Card>
     )
 }
