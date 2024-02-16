@@ -34,15 +34,17 @@ function App() {
       <ExpenseForm onSaveForm={FormHandler}></ExpenseForm>
       <h1>Expense Items</h1>
       <Filter onFilter={onFilterHandler} filterYear={filterYear}></Filter>
-      {filteredExp.map((item) => (
-        <ExpenseItems
-          onDelete={DeleteHandler}
-          name={item.itemname}
-          date={item.date}
-          amount={item.amount}
-          key={item.itemname}
-        ></ExpenseItems>
-      ))}
+      {filteredExp.length == 0 && <h3>No expenses available </h3>}
+      {filteredExp.length > 0 &&
+        filteredExp.map((item) => (
+          <ExpenseItems
+            onDelete={DeleteHandler}
+            name={item.itemname}
+            date={item.date}
+            amount={item.amount}
+            key={item.itemname}
+          ></ExpenseItems>
+        ))}
     </div>
   );
 }
