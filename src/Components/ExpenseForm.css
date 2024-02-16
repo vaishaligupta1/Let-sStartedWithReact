@@ -1,0 +1,24 @@
+.form_label {
+  font-size: 40px;
+  font-weight: 100;
+  color: bisque;
+  padding: 10px;
+  margin: 5px;
+}
+
+.form_input {
+  height: 40px;
+  width: 200px;
+  padding: 10px;
+}
+/* form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+#expense {
+  margin: 5px;
+  color: blue;
+  height: 30px;
+  width: 150px;
+}
