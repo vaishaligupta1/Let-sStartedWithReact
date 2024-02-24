@@ -1,0 +1,26 @@
+.errorclass {
+  /* display: flex; */
+  /* width: 50px;
+  height: 25px; */
+  border: 7px solid black;
+  display: block;
+  z-index: 200;
+  position: fixed;
+  left: 30%;
+  top: 40%;
+}
+.heading {
+  background-color: blueviolet;
+  color: white;
+}
+.content {
+  align-content: center;
+}
+.screendisable {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 20;
+}

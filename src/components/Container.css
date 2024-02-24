@@ -1,0 +1,8 @@
+.container {
+  justify-content: center;
+  align-items: center;
+
+  border: 3px solid rgb(40, 40, 43);
+  margin: 10px;
+  padding: 5px;
+}
