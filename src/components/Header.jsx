@@ -1,4 +1,5 @@
 import "./Header.css";
+import { headerimage } from "../utils/headerimage";
 import { IoCartOutline } from "react-icons/io5";
 const Header = () => {
   return (

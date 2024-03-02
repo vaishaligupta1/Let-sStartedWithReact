@@ -1,0 +1,23 @@
+.summary {
+  width: 600px;
+  height: 150px;
+  background-color: rgba(71, 5, 5, 0.877);
+  z-index: 25px;
+  border: 2px solid black;
+  margin-top: 130px;
+  margin-left: 350px;
+}
+
+.heading {
+  text-align: center;
+  color: white;
+  font-size: xx-large;
+  font-weight: 200px;
+}
+
+.para {
+  color: white;
+  font-size: larger;
+  font-weight: 150px;
+  text-align: center;
+}
