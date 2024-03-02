@@ -1,0 +1,49 @@
+.header-class {
+  width: full;
+  height: 150px;
+}
+
+.upper-header {
+  display: flex;
+  width: full;
+  height: 80px;
+  background-color: rgba(71, 5, 5, 0.877);
+}
+
+.Restaurant-name {
+  margin-left: 60px;
+  color: white;
+  font-weight: 200;
+  text-align: left;
+  font-size: xx-large;
+}
+
+.cart {
+  margin-left: 800px;
+  margin-top: 10px;
+  display: flex;
+  width: 250px;
+  height: 50px;
+  border: 2px solid rgb(231, 224, 230);
+  border-radius: 20px;
+  color: white;
+  font-weight: 70px;
+  /* align-items: right; */
+  text-align: right;
+}
+
+.cart > span {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: larger;
+}
+
+.lower-header {
+  width: full;
+  height: 70 px;
+}
+
+.lower-header > img {
+  height: 200px;
+  width: 1350px;
+}

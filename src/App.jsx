@@ -1,11 +1,9 @@
 import { useState } from "react";
-import Form from "./components/Form";
-import TableOrders from "./components/TableOrders";
+import Header from "./components/Header";
 function App() {
   return (
     <>
-      <Form></Form>
-      <TableOrders></TableOrders>
+      <Header></Header>
     </>
   );
 }
