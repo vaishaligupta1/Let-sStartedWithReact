@@ -1,9 +1,15 @@
 import { useState } from "react";
+import Header from "./components/Header";
+import RestaurantSummary from "./components/RestaurantSummary";
+import Card from "./components/Card";
 import Body from "./components/Body";
+
 function App() {
   return (
     <>
-      <Body></Body>
+      <Header></Header>
+
+      <Body />
     </>
   );
 }

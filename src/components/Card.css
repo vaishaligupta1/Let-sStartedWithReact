@@ -1,0 +1,12 @@
+.card {
+  margin: 5px;
+
+  height: 300px;
+  width: 200px;
+  background-color: rgba(71, 5, 5, 0.877);
+}
+
+.card:hover {
+  border: 1px solid black;
+  cursor: pointer;
+}

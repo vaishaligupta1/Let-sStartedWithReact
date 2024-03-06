@@ -1,0 +1,23 @@
+.list-restaurant {
+  margin-top: 170px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+}
+li {
+  margin: 10px;
+  color: white;
+}
+
+.addbutton {
+  background-color: white;
+  color: rgba(71, 5, 5, 0.877);
+  height: 30px;
+  width: 70px;
+  border-radius: 15px;
+  font-size: large;
+  font-weight: 100;
+}
