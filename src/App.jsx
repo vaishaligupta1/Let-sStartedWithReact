@@ -1,11 +1,9 @@
 import { useState } from "react";
-import Header from "./components/Header";
-import RestaurantSummary from "./components/RestaurantSummary";
+import Body from "./components/Body";
 function App() {
   return (
     <>
-      <Header></Header>
-      <RestaurantSummary />
+      <Body></Body>
     </>
   );
 }
