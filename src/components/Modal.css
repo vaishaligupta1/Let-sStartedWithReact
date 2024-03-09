@@ -1,0 +1,18 @@
+.modal-card {
+  height: 210px;
+  width: 500px;
+  background-color: skyblue;
+  position: fixed;
+  top: 25%;
+  z-index: 100;
+  justify-content: center;
+  left: 35%;
+}
+
+.transparentdiv {
+  z-index: 50;
+  height: 100%;
+  width: 100%;
+  background: rgb(236, 233, 233, 0.75);
+  position: fixed;
+}

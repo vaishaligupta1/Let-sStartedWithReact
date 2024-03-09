@@ -1,5 +1,7 @@
 import Card from "./Card";
 import "./Body.css";
+import { useState } from "react";
+import Modal from "./Modal";
 const meals = [
   {
     id: "m1",
@@ -38,7 +40,12 @@ function Body(props) {
               <h3>{meal.description}</h3>
               <h3>{meal.price}</h3>
 
-              <button className="addbutton">+Add</button>
+              <button
+                className="addbutton"
+                onClick={() => props.AddHandler(meal)}
+              >
+                +Add
+              </button>
             </li>
           </Card>
         ))}
