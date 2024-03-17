@@ -1,7 +1,7 @@
 .modal-card {
   height: 210px;
   width: 500px;
-  background-color: skyblue;
+  background-color: rgba(240, 154, 154, 0.877);
   position: fixed;
   top: 25%;
   z-index: 100;

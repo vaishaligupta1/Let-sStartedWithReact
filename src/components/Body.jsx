@@ -1,7 +1,7 @@
-import Card from "./Card";
+import { useContext } from "react";
 import "./Body.css";
-import { useState } from "react";
-import Modal from "./Modal";
+import Card from "./Card";
+import CartContext from "../contexts/cartContext";
 const meals = [
   {
     id: "m1",
@@ -11,6 +11,7 @@ const meals = [
   },
   {
     id: "m2",
+
     name: "Schnitzel",
     description: "A german specialty!",
     price: 16.5,
@@ -29,7 +30,8 @@ const meals = [
   },
 ];
 
-function Body(props) {
+function Body() {
+  const { addMeal } = useContext(CartContext);
   return (
     <>
       <ul className="list-restaurant">
@@ -40,10 +42,7 @@ function Body(props) {
               <h3>{meal.description}</h3>
               <h3>{meal.price}</h3>
 
-              <button
-                className="addbutton"
-                onClick={() => props.AddHandler(meal)}
-              >
+              <button className="addbutton" onClick={() => addMeal(meal)}>
                 +Add
               </button>
             </li>

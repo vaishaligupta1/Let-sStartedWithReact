@@ -1,25 +1,32 @@
-import React from "react";
+import React, { useContext } from "react";
 import Modal from "./Modal";
+import CartContext from "../contexts/cartContext";
 
-function VerifyItem(props) {
+function VerifyItem() {
+  const { meal, closeModal, addToCart, numberOfItemsInCart } =
+    useContext(CartContext);
+  console.log(meal);
   return (
     <>
-      {props.item && (
-        <Modal onCloseHandler={props.onCloseHandler}>
+      {meal && (
+        <Modal removeModal={closeModal}>
           <div>
-            <h3>{props.item.name}</h3>
+            <h3>{meal.name}</h3>
             <div>
               <h2> Total Amount</h2>
-              <h3>{props.item.price}</h3>
+              <h3>{meal.price}</h3>
             </div>
             <div className="button-div">
-              <button
-                onClick={() => props.onCloseHandler()}
-                className="close-btn"
-              >
+              <button className="close-btn" onClick={closeModal}>
                 close
               </button>
-              <button className="order-btn"> order</button>
+              <button
+                className="order-btn"
+                onClick={() => addToCart(meal, numberOfItemsInCart)}
+              >
+                {" "}
+                order
+              </button>
             </div>
           </div>
         </Modal>

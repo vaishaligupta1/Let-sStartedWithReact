@@ -1,28 +1,16 @@
-import { useState } from "react";
+import React from "react";
 import Header from "./components/Header";
-import RestaurantSummary from "./components/RestaurantSummary";
-import Card from "./components/Card";
 import Body from "./components/Body";
-import Modal from "./components/Modal";
 import VerifyItem from "./components/VerifyItem";
-
+import Cart from "./components/Cart";
 function App() {
-  const [modal, setModal] = useState(null);
-  function AddHandler(meal) {
-    console.log(meal);
-    setModal(meal);
-  }
-  function onCloseHandler() {
-    console.log("click");
-    setModal(null);
-  }
   return (
-    <>
-      <Header></Header>
-
-      <Body AddHandler={AddHandler} />
-      <VerifyItem item={modal} onCloseHandler={onCloseHandler} />
-    </>
+    <div>
+      <Header />
+      <Body />
+      <VerifyItem />
+      <Cart />
+    </div>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./Card";
+import "./Modal.css";
 import ReactDOM from "react-dom";
 function Modal(props) {
   return (
@@ -7,7 +7,7 @@ function Modal(props) {
       {ReactDOM.createPortal(
         <>
           <div className="modal-card">{props.children}</div>
-          <div className="transparentdiv" onClick={props.onCloseHandler}></div>
+          <div className="transparentdiv" onClick={props.removeModal}></div>
         </>,
         document.getElementById("modal")
       )}
