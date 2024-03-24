@@ -1,15 +1,17 @@
-import React from "react";
-import Header from "./components/Header";
-import Body from "./components/Body";
-import VerifyItem from "./components/VerifyItem";
-import Cart from "./components/Cart";
+import React, { useContext } from "react";
+import Header from "./Components/Header";
+import Body from "./Components/Body";
+import Modal from "./Components/Modal";
+import NotesContext from "./Store/NoteContext";
+import NoteList from "./Components/NoteList";
 function App() {
+  const { modal } = useContext(NotesContext);
   return (
     <div>
-      <Header />
+      <Header></Header>
       <Body />
-      <VerifyItem />
-      <Cart />
+      <NoteList />
+      {modal && <Modal />}
     </div>
   );
 }
